@@ -1,0 +1,641 @@
+*{
+ padding: 0;
+ margin: 0;
+ font-family: 'MuseoModerno', sans-serif;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+
+body{
+ background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(photos/BCK_NFS.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+header{
+ position: relative;
+ top: 0;
+ position: fixed;
+ width: 100%;
+ height: 100px;
+ background-color: black;
+ z-index: 100;
+}
+
+img{
+ height: 150px;
+ width: 300px;
+}
+
+.img{
+ display: none;
+ width: 70px;
+ height: 50px;
+}
+
+.navbar{
+ width: 100%;
+ max-width: 1200px;
+ height: 100px;
+ margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.navbar .links{
+ display: flex;
+ gap: 1rem;
+ font-size: 25px;
+ list-style: none;
+}
+
+.links a{
+ color: #fff;
+ transition: 0.3s ease-in;
+}
+.links a:hover{
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 5px rgb(163, 0, 0), 0 0 10px rgb(255, 0, 0);
+}
+
+.navbar .social-icons{
+ display: flex;
+ gap: 1rem;
+ font-size: 25px;
+ list-style: none;
+}
+
+.bxl-github{
+ color: rgb(0, 0, 0);
+ text-shadow:0 0 10px rgb(255, 255, 255);
+}
+
+.bxl-gmail{
+ color: red;
+ text-shadow:0 0 15px red, 0 0 25px rgb(204, 0, 0);
+}
+
+.bxl-telegram {
+ color: rgb(0, 122, 192);
+ text-shadow: 0 0 15px rgb(0, 122, 192), 0 0 25px rgb(0, 122, 192);
+}
+
+.bxs-conversation {
+ color: rgb(204, 204, 0);
+ text-shadow: 0 0 15px rgb(204, 204, 0);
+}
+
+
+
+h2{
+  font-size: 50px;
+}
+
+.about-links{
+  padding: 100px 0 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  list-style: none;
+}
+.about-links li{
+  padding-top: 0.5rem;
+  font-size: 25px;
+}
+
+.about-links a{
+  color: #fff;
+}
+
+.logo{
+  display: none;
+  background-color: black;
+  padding: 0px 0px 20px 20px;
+  height: 200px;
+  width: 350px;
+  clip-path: polygon(24% 20%, 100% 20%, 84% 63%, 7% 63%);
+}
+
+
+/*----POLICE INFO-----*/
+
+.POLICE-INFO{
+ margin-top: 700px;
+ background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(photos/CHASE);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ clip-path: polygon(50% 8%, 100% 21%, 100% 81%, 50% 100%, 50% 100%, 0 81%, 0 21%);
+ height: 170vh;
+ width: 100%;
+}
+
+.triangle{
+  position: relative;
+  display: flex;
+  height: 28%;
+  width: 100%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.info > h1{
+  font-size: 45px;
+  color: #fff;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.pol-con{
+  display: flex;
+  flex-direction: row;
+}
+
+.video-ab-police{
+  display: flex;
+  height: 300px;
+  width: 40%;
+  overflow: hidden;
+  margin: 1% 1%;
+}
+
+.video-ab-police > video{
+  display: flex;
+  height: 300px;
+  width: 100%;
+}
+
+.police-p{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 55%;
+  box-shadow: 0 0 5px white;
+  backdrop-filter: blur(2px);
+  margin: 1% 1%;
+  
+}
+
+.police-p > h4{
+  color: rgb(248, 248, 248);
+  font-size: 20px;
+  padding: 1%;
+}
+
+.police-p > p{
+  font-size: 18px;
+  color: rgb(212, 206, 206);
+  padding-left: 5px;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(0, 0, 0);
+
+}
+
+::-webkit-scrollbar-thumb{
+ background-color: red;
+ border-radius: 25px;
+}
+
+.info > h2{
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.info > button{
+   border-radius: 50px;
+   background-color: rgb(231, 0, 0);
+   border: none;
+   font-size: 25px;
+   padding: 5px 40px;
+   margin: 10px 0 0 45%;
+   transition: 0.5s ease;
+}
+.info > button:hover{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 0px;
+}
+
+.info > button > a{
+     color: black;
+     background-color: transparent;
+}
+
+.racers-info{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(photos/porsche-chase.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(50% 20%, 50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0%);
+  height: 150vh;
+  width: 100%;
+  margin-top: -220px;
+}
+
+.racer-con{
+  display: flex;
+  flex-direction: row;
+  padding-top: 25%;
+}
+
+.racer-con > h1{
+  font-size: 45px;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  margin-top: 20px;
+  top:1890px;
+  left: 45%;
+}
+
+.racer{
+  height: 50vh;
+  width: 40%;
+  margin: 1% 1%;
+}
+
+
+.racer-p{
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 55%;
+  box-shadow: 0 0 5px white;
+  backdrop-filter: blur(2px);
+  margin: 1% 1%;
+}
+
+.racer-p > h4{
+  color: #fff;
+  font-size: 20px;
+  padding: 1%;
+}
+.racer-p > p{
+  color: rgb(248, 248, 248);
+  font-size: 17px;
+  padding-left: 5px;
+}
+
+.racers-info > h2{
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.racers-info > button{
+  border-radius: 50px;
+  background-color: rgb(231, 0, 0);
+  border: none;
+  font-size: 25px;
+  padding: 5px 40px;
+  margin: 10px 0 0 45%;
+  transition: 0.5s ease;
+}
+
+.racers-info > button:hover{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 0px;
+}
+
+.racers-info > button > a{
+  color: #000000;
+}
+
+.about-mw{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/racers-team.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-inf{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-inf> h1{
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.about-p-con{
+}
+
+.about-p-con > h4{
+  font-size: 20px;
+  color: blanchedalmond;
+  padding: 1% 2%;
+
+}
+
+.about-p-con > h4::before{
+  content: ">>>  ";
+  font-size: 20px;
+  color: red;
+}
+.about-p-con > h4::after{
+  content: "  <<<";
+  font-size: 20px;
+  color: red;
+}
+
+.about-p-con>p{
+  display: flex;
+  padding-left: 1%;
+  color: rgb(153, 151, 151);
+}
+
+.rules-con{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/police-viper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-cars{
+  flex-direction: column;
+  align-items: flex-end;
+  height: 500px;
+  display: flex;
+  width: 400px;
+  box-shadow: 0 0 10px black;
+  backdrop-filter: blur(5px);
+}
+.card-revards{
+  flex-direction: column;
+  align-items: flex-end;
+  height: 500px;
+  display: flex;
+  width: 400px;
+  box-shadow: 0 0 10px black;
+  backdrop-filter: blur(5px);
+}
+.card-map{
+  flex-direction: column;
+  align-items: flex-end;
+  height: 500px;
+  display: flex;
+  width: 400px;
+  box-shadow: 0 0 10px black;
+  backdrop-filter: blur(5px);
+}
+
+.card-info{
+  backdrop-filter: blur(5px);
+  height: 300px;
+  width: 100%;
+  color: #fff;
+  overflow-y: scroll;
+}
+
+.card-img{
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/cars.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s ease;
+}
+.card-img2{
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/first-place.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s ease;
+}
+.card-img3{
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/map.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s ease;
+}
+
+.card-img:hover{
+  transform: translateZ();
+  width: 100%;
+  height: 350px;
+}
+.card-img2:hover{
+  transform: translateZ();
+  width: 100%;
+  height: 350px;
+}
+.card-img3:hover{
+  transform: translateZ();
+  width: 100%;
+  height: 350px;
+}
+
+footer{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url() rgb(110, 105, 105);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.h1{
+  display: flex;
+  position: absolute;
+  margin-left: 45%;
+}
+
+.footer-left{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 29%;
+}
+
+.footer-midle{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 11%;
+}
+
+.footer-midle > li > a{
+  color: black;
+}
+
+.footer-right{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+/*-------------------MEDIA SCREEN------------------------*/
+/*for laptop*/
+@media (max-width: 1280px){
+ img{
+  display: none;
+ }
+ .img{
+  display: block;
+ }
+ .POLICE-INFO{
+  margin-top: 700px;
+  height: 170vh;
+  clip-path: polygon(50% 8%, 100% 21%, 100% 91%, 50% 100%, 50% 100%, 0 91%, 0 21%);
+ }
+
+   .racer {
+    margin-top: 100px;
+   }
+  .racer-p{
+    margin-top: 100px;
+  }
+}
+
+/*For Tablets*/
+@media (max-width: 1000px){
+ body{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(photos/BCK_NFS.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+  .POLICE-INFO{
+   margin-top: 550px;
+   height: 180vh;
+   width: 100%;
+   clip-path: polygon(50% 8%, 100% 21%, 100% 91%, 50% 100%, 50% 100%, 0 91%, 0 21%);
+  }
+
+  .about-links{
+    padding: 40px 0 0 30px;
+  }
+  .about-links li{
+    padding-top: 0.3rem;
+    font-size: 25px;
+  }
+  .logo{
+    margin-top: 40px;
+    display: block;
+  }
+  
+  .triangle{
+    display: none;
+  }
+  .info> h1{
+    display: flex;
+    position: relative;
+    top: 150px;
+  }
+  .pol-con{
+    display: flex;
+    flex-direction: column;
+  }
+  .video-ab-police{
+    margin: 25% 1% 0 1%;
+    width: 98%;
+  }
+  
+  .police-p{
+   width: 98%;
+  }
+  .info>button{
+    display: flex;
+    position: relative;
+    right: 30px;
+  }
+
+  .racers-info{
+    height: 220vh;
+    clip-path: polygon(50% 18%, 50% 18%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+  }
+  .racer-con{
+    display: flex;
+    flex-direction: column;
+  }
+  .racer-con > h1{
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    top:1800px;
+    left: 45%;
+  }
+
+  .racer{
+   width: 98%;
+   margin: 25% 1% 0 1%;
+  }
+  .racer-p{
+    width: 98%;
+  }
+  .rules-con{
+    flex-direction: column;
+    height: 400vh;
+  }
+  .card-cars{
+    margin-top: -100px;
+    width: 80%;
+  }
+  .card-revards{
+    margin-top: -100px;
+    width: 80%;
+  }
+  .card-map{
+    margin-top: -100px;
+    width: 80%;
+  }
+}
+/*low resolution tablets*/
+@media (max-width: 767px){
+
+}
+
+/*Mobile*/
+@media (max-width: 480px){
+
+}
